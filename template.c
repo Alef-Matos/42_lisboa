@@ -14,5 +14,5 @@
 
 int main(void)
 {
-    
+    write(1, "abc\n", 4);
 }
