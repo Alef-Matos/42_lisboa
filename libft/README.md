@@ -1,3 +1,9 @@
-# 42_lisboa
+# Libft
 
-Área de trabalhos.
+Construindo uma biblioteca de funções.
+
+Ainda está em desenvolvimento.
+
+Cada função tem seu próprio test_nome_da_função.c para testes.
+
+
