@@ -1,3 +1,12 @@
 # Ft_strchr
 
-Todas as funções da minha "Libft" com Readme's, Explicando o que a função faz e também o que cada linha de código faz.
+char *ft_strchr(const char *s, int c)
+{
+    while (*s != '\0' && c != *s)
+    {
+      s++;
+      if (c == *s)
+        return ((char *)s);
+    }
+    return (0);
+}
