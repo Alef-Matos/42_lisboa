@@ -1,3 +1,4 @@
+```c
 # Ft_strchr
 
 char *ft_strchr(const char *s, int c)
@@ -10,3 +11,4 @@ char *ft_strchr(const char *s, int c)
     }
     return (0);
 }
+```
