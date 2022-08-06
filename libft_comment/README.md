@@ -27,8 +27,8 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_strlcat`
 - [ ] Função `ft_toupper`
 - [ ] Função `ft_tolower`
-- [x] Função [`ft_strchr`](42_lisboa/libft_comment/Ft_strchr) - locate character in string (first occurrence).
-- [x] Função [`ft_strrchr`](42_lisboa/libft_comment/Ft_strrchr) - locate character in string (last occurence).
+- [x] Função [`ft_strchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strchc) - locate character in string (first occurrence).
+- [x] Função [`ft_strrchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strrchc) - locate character in string (last occurence).
 - [ ] Função `ft_strncmp`
 - [ ] Função `ft_memchr`
 - [ ] Função `ft_memcmp`
