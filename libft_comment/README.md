@@ -13,33 +13,25 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 
 	You must write your own function implementing the following original ones. They do not require any external functions:
 
-- [x] `isalpha`
-- [ ] `isdigit`
-- [ ] `isalnum`
-- [ ] `isascii`
-- [ ] `isprint`
-- [ ] `strlen`
-- [ ] `memset`
-- [ ] `bzero`
-- [ ] `memcpy`
-- [ ] `memmove`
-- [ ] `strlcpy`
-- [ ] `strlcat`
-- [ ] `toupper`
-- [ ] `tolower`
-- [ ] `strchr`
-- [ ] `strrchr`
-- [ ] `strncmp`
-- [ ] `memchr`
-- [ ] `memcmp`
-- [ ] `strnstr`
-- [ ] `strnstr`
-- [ ] `atoi`
-
-| Primeiro cabeçalho  |  Segundo cabeçalho  |
-| ------------------- | ------------------- |
-|- [x] `isalpha` |  Célula de conteúdo |
-|  Célula de conteúdo |  Célula de conteúdo |
-
-
-
+- [ ] Function `ft_isalpha`
+- [ ] Function `ft_isdigit`
+- [ ] Function `ft_isalnum`
+- [ ] Function `ft_isascii`
+- [ ] Function `ft_isprint`
+- [x] Function `ft_strlen`
+- [ ] Function `ft_memset`
+- [ ] Function `ft_bzero`
+- [ ] Function `ft_memcpy`
+- [ ] Function `ft_memmove`
+- [ ] Function `ft_strlcpy`
+- [ ] Function `ft_strlcat`
+- [ ] Function `ft_toupper`
+- [ ] Function `ft_tolower`
+- [x] Function `ft_strchr`
+- [x] Function `ft_strrchr`
+- [ ] Function `ft_strncmp`
+- [ ] Function `ft_memchr`
+- [ ] Function `ft_memcmp`
+- [ ] Function `ft_strnstr`
+- [ ] Function `ft_strnstr`
+- [ ] Function `ft_atoi`
