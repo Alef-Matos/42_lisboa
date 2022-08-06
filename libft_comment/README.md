@@ -13,12 +13,12 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 
 	You must write your own function implementing the following original ones. They do not require any external functions:
 
-- [ ] Function `ft_isalpha`
+- [ ] Function `ft_isalpha`				- alphabetic character test.
 - [ ] Function `ft_isdigit`
 - [ ] Function `ft_isalnum`
 - [ ] Function `ft_isascii`
 - [ ] Function `ft_isprint`
-- [x] Function `ft_strlen`
+- [x] Function [`ft_strlen`](42_lisboa/libft_comment/Ft_strlen) - find length of string.
 - [ ] Function `ft_memset`
 - [ ] Function `ft_bzero`
 - [ ] Function `ft_memcpy`
@@ -27,8 +27,8 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Function `ft_strlcat`
 - [ ] Function `ft_toupper`
 - [ ] Function `ft_tolower`
-- [x] Function `ft_strchr`
-- [x] Function `ft_strrchr`
+- [x] Function [`ft_strchr`](42_lisboa/libft_comment/Ft_strchr) - locate character in string (first occurrence).
+- [x] Function [`ft_strrchr`](42_lisboa/libft_comment/Ft_strrchr) - locate character in string (last occurence).
 - [ ] Function `ft_strncmp`
 - [ ] Function `ft_memchr`
 - [ ] Function `ft_memcmp`
