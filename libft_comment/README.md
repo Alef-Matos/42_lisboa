@@ -18,7 +18,7 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_isalnum`
 - [ ] Função `ft_isascii`
 - [ ] Função `ft_isprint`
-- [x] Função [`ft_strlen`](42_lisboa/libft_comment/Ft_strlen) - find length of string.
+- [x] Função [`ft_strlen`](42_lisboa/libft_comment/Ft_strlen/ft_strlen.c) - find length of string.
 - [ ] Função `ft_memset`
 - [ ] Função `ft_bzero`
 - [ ] Função `ft_memcpy`
