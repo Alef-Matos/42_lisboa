@@ -30,16 +30,17 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_memset` - Escreve um byte em uma string de bytes. 
 - [ ] Função `ft_memcpy` - Área de memória de cópia. 
 - [ ] Função `ft_memmove` - Copiar cadeia de bytes. 
+- [ ] Função `ft_memchr` - Localizar byte na cadeia de bytes. 
+- [ ] Função `ft_memcmp` - Comparar cadeia de bytes. 
 
 ### Funções da biblioteca `<string.h>`
-### Funções da biblioteca `<math.h>`
 - [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - - teste de caracteres alfabéticos. 
 - [ ] Função `ft_strlcpy`
 - [ ] Função `ft_strlcat`
+- [ ] Função `ft_strstr`
+- [ ] Função `ft_strnstr`
 - [x] Função [`ft_strchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strchr) - localizar caractere na string (primeira ocorrência).
 - [x] Função [`ft_strrchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strrchr) - localizar caractere na string (última ocorrência).
 - [ ] Função `ft_strncmp`
-- [ ] Função `ft_memchr`
-- [ ] Função `ft_memcmp`
-- [ ] Função `ft_strnstr`
-- [ ] Função `ft_strnstr`
+
+### Funções da biblioteca `<math.h>`
