@@ -23,14 +23,17 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_toupper` - Conversão de letras minúsculas para maiúsculas. 
 
 ### Funções da biblioteca `<stdlib.h>`
+- [ ] Função `ft_atoi` - Converter string ASCII para inteiro. 
+
 ### Funções da biblioteca `<strings.h>`
+- [ ] Função `ft_bzero` - Escreve zeros em uma string de bytes. 
+- [ ] Função `ft_memset` - Escreve um byte em uma string de bytes. 
+- [ ] Função `ft_memcpy` - Área de memória de cópia. 
+- [ ] Função `ft_memmove` - Copiar cadeia de bytes. 
+
 ### Funções da biblioteca `<string.h>`
 ### Funções da biblioteca `<math.h>`
 - [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - - teste de caracteres alfabéticos. 
-- [ ] Função `ft_memset`
-- [ ] Função `ft_bzero`
-- [ ] Função `ft_memcpy`
-- [ ] Função `ft_memmove`
 - [ ] Função `ft_strlcpy`
 - [ ] Função `ft_strlcat`
 - [x] Função [`ft_strchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strchr) - localizar caractere na string (primeira ocorrência).
@@ -40,4 +43,3 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_memcmp`
 - [ ] Função `ft_strnstr`
 - [ ] Função `ft_strnstr`
-- [ ] Função `ft_atoi`
