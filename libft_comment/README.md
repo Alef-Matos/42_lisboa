@@ -14,11 +14,12 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 	Você deve escrever sua própria função implementando as seguintes funções originais. Eles não requerem nenhuma função externa:
 
 ### Funções da biblioteca `<ctype.h>`
+- [ ] Função `ft_isalpha` - Teste de caracteres alfabéticos. 
+
 ### Funções da biblioteca `<stdlib.h>`
 ### Funções da biblioteca `<strings.h>`
 ### Funções da biblioteca `<string.h>`
 ### Funções da biblioteca `<math.h>`
-- [ ] Função `ft_isalpha`				- alphabetic character test.
 - [ ] Função `ft_isdigit`
 - [ ] Função `ft_isalnum`
 - [ ] Função `ft_isascii`
