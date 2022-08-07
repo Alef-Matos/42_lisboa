@@ -1,5 +1,7 @@
 # Ft_strrchr
 
+    Foi usado operadores de pointers como base no programa.
+
 `#include <unistd.h>` 
 
 `#include "libft.h"` Incluir biblioteca pessoal.  
