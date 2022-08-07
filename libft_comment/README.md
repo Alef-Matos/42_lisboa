@@ -15,13 +15,14 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 
 ### Funções da biblioteca `<ctype.h>`
 - [ ] Função `ft_isalpha` - Teste de caracteres alfabéticos. 
+- [ ] Função `ft_isdigit` - Teste de caractere de dígito decimal. 
+- [ ] Função `ft_isalnum` - Teste de caracteres alfanuméricos. 
+
 
 ### Funções da biblioteca `<stdlib.h>`
 ### Funções da biblioteca `<strings.h>`
 ### Funções da biblioteca `<string.h>`
 ### Funções da biblioteca `<math.h>`
-- [ ] Função `ft_isdigit`
-- [ ] Função `ft_isalnum`
 - [ ] Função `ft_isascii`
 - [ ] Função `ft_isprint`
 - [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - - teste de caracteres alfabéticos. 
