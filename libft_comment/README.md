@@ -18,7 +18,7 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_isalnum`
 - [ ] Função `ft_isascii`
 - [ ] Função `ft_isprint`
-- [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - find length of string.
+- [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - - teste de caracteres alfabéticos. 
 - [ ] Função `ft_memset`
 - [ ] Função `ft_bzero`
 - [ ] Função `ft_memcpy`
