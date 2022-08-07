@@ -1,6 +1,6 @@
 # Ft_strrchr
 
-    Foi usado operadores de pointers como base no programa.
+    Foi usado operações com pointers para a base no programa.
 
 `#include <unistd.h>` 
 
