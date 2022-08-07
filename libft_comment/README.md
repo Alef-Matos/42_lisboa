@@ -34,7 +34,7 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_memcmp` - Comparar cadeia de bytes. 
 
 ### Funções da biblioteca `<string.h>`
-- [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - - teste de caracteres alfabéticos. 
+- [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - Teste de caracteres alfabéticos. 
 - [ ] Função `ft_strlcpy` - Copiar strings. 
 - [ ] Função `ft_strlcat` - Concatenação de strings limitadas por tamanho. 
 - [ ] Função `ft_strstr` - Localiza uma substring em uma string. 
