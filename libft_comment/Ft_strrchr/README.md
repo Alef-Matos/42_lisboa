@@ -26,15 +26,15 @@
 
 {
 
-`s--;`
+`s--;`Regressa uma posiçao no ponteiro de 's'.
 
-`if(*s == c)`
+`if(*s == c)` Se o ponteiro na posiçao atual for igual a 'c', executa o comando abaixo.
 
-`return ((char *)s);`
+`return ((char *)s);`Retorna a posição  atual do ponteiro 's'.
 
 }
 
-`return (0);`
+`return (0);` Quando a condição  do `while` for falsa retorna null.
 
 }
 
