@@ -41,6 +41,6 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_strnstr` - Localizar uma substring em uma string (limitada por tamanho).
 - [x] Função [`ft_strchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strchr) - localizar caractere na string (primeira ocorrência).
 - [x] Função [`ft_strrchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strrchr) - localizar caractere na string (última ocorrência).
-- [ ] Função `ft_strncmp`
+- [ ] Função `ft_strncmp` - Compara strings. 
 
 ### Funções da biblioteca `<math.h>`
