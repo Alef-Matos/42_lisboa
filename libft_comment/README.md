@@ -29,6 +29,7 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [ ] Função `ft_bzero` - Escreve zeros em uma string de bytes. 
 - [ ] Função `ft_memset` - Escreve um byte em uma string de bytes. 
 - [ ] Função `ft_memcpy` - Área de memória de cópia. 
+- [ ] Função `ft_memccpy` - Copia a string até que o caractere seja encontrado. 
 - [ ] Função `ft_memmove` - Copiar cadeia de bytes. 
 - [ ] Função `ft_memchr` - Localizar byte na cadeia de bytes. 
 - [ ] Função `ft_memcmp` - Comparar cadeia de bytes. 
@@ -37,7 +38,6 @@ Todas as funções da minha "Libft" com Readme's, Explicando o que a função fa
 - [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - Teste de caracteres alfabéticos. 
 - [ ] Função `ft_strlcpy` - Copiar strings. 
 - [ ] Função `ft_strlcat` - Concatenação de strings limitadas por tamanho. 
-- [ ] Função `ft_strstr` - Localiza uma substring em uma string. 
 - [ ] Função `ft_strnstr` - Localizar uma substring em uma string (limitada por tamanho).
 - [x] Função [`ft_strchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strchr) - localizar caractere na string (primeira ocorrência).
 - [x] Função [`ft_strrchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strrchr) - localizar caractere na string (última ocorrência).
