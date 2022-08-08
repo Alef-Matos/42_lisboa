@@ -3,8 +3,6 @@
     
 ### Código da função:
 ```c
-#include <unistd.h>
-
 size_t ft_strlen(const char *s)
 {
     size_t i;
@@ -16,8 +14,6 @@ size_t ft_strlen(const char *s)
 }
 ```
 ### Código da função com explicação linha a linha:
-`#include <unistd.h>`
-
 
 `size_t ft_strlen(const char *s)`
 
