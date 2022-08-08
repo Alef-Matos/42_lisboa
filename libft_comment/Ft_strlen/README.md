@@ -24,7 +24,7 @@ size_t ft_strlen(const char *s)
 
 `i = 0;` Será atribuido o valor referênte a cada loop que o while fizer.
 
-`while(s[i])` Enquando o 's' na posição atual não for fazio, executa o comando abaixo.
+`while(s[i])` Enquando o 's' na posição atual não for vazio, executa o comando abaixo.
 
 `i++;` Acrescente +1 no valor da variável i.
 
