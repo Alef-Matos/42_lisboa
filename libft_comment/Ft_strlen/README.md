@@ -31,3 +31,5 @@ size_t ft_strlen(const char *s)
 `return (l);` Apos o while for falso retorna o valor atual de 'l' ou seja a quantidade de caracters dentro da string 's'.
 
 }
+
+![image](https://user-images.githubusercontent.com/105389961/183395871-2be78d2d-3440-4194-8fbb-bf12238625ff.png)
