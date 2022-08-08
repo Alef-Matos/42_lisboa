@@ -1,6 +1,8 @@
 # Ft_strrchr
 
     Foi usado operações com pointers como base para a recriação da função.
+    
+### Código da função:
 ```c 
 #include <unistd.h>
 #include "libft.h"
@@ -22,7 +24,7 @@ char *ft_strrchr(const char *s, int c)
     return (0);
 }
 ```
-
+### Código da função com explicação linha a linha:
 `#include <unistd.h>` 
 
 `#include "libft.h"` Incluir biblioteca pessoal.  
