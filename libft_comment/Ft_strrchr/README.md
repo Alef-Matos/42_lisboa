@@ -39,6 +39,6 @@
 `return (0);` Quando a condição  do `while` for falsa retorna null.
 
 }
+![image](https://im.ezgif.com/tmp/ezgif-1-1ed9727adc.gif)
 
-![image](https://user-images.githubusercontent.com/105389961/183371606-a0ab6b1f-5e3f-4748-8133-eb7ff5c04cf2.png)
 
