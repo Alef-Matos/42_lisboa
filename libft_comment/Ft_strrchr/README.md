@@ -34,7 +34,7 @@ char *ft_strrchr(const char *s, int c)
 
 {
 
-`int size_str;` Declarar inteiro.
+`int size_str;` Declarar variável do tipo inteiro.
 
 `const char *s_copy;` Declarar Pointer do tipo const char.
 
