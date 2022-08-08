@@ -15,19 +15,19 @@ size_t ft_strlen(const char *s)
 ```
 ### Código da função com explicação linha a linha:
 
-`size_t ft_strlen(const char *s)`
+`size_t ft_strlen(const char *s)` Declaração da função.
 
 {
 
-`size_t i;`
+`size_t i;` Declarar variável do tipo 'size_t'(Valor sem sinal).
 
 
-`i = 0;`
+`i = 0;` Será atribuido o valor refênte a cada loop que o while fizer.
 
-`while(s[i])`
+`while(s[i])` Enquando o 's' na posição atual não for fazio, executa o comando abaixo.
 
-`i++;`
+`i++;` Acrescente +1 no valor da variável i.
 
-`return (i);`
+`return (i);` Apos o while for falso retorna o valor atual de 'i' ou seja a quantidade de caracters dentro da string 's'.
 
 }
