@@ -24,7 +24,8 @@
 `s = (s_copy + size_str);` Pointer 's' tera a posição do ultimo caracter da string 's'. 
 
 `while(*s != *s_copy && c != *s)` Enquanto posiçao do pointer 's' for diferente que a posiçao de referência.
-                                  e c for diferente que o conteudo do pointer na posição atual.
+                                  E 'c' for diferente que o conteudo do pointer na posição atual, será executado
+                                  o comando abaixo.
 
 {
 
