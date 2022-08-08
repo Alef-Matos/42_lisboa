@@ -1,3 +1,8 @@
+    
+# Ft_strchr    
+    Foi usado operações com pointers como base para a recriação da função.
+    
+### Código da função:
 ```c
 # Ft_strchr
 
