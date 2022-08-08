@@ -22,12 +22,12 @@ size_t ft_strlen(const char *s)
 `size_t i;` Declarar variável do tipo 'size_t'(Valor sem sinal).
 
 
-`i = 0;` Será atribuido o valor referênte a cada loop que o while fizer.
+`l = 0;` Será atribuido o valor refênte a cada loop que o while fizer.
 
-`while(s[i])` Enquando o 's' na posição atual não for vazio, executa o comando abaixo.
+`while(*s++)` Enquando o pointer 's' for fazio, avança uma posição na string 's' e executa o comando abaixo.
 
-`i++;` Acrescente +1 no valor da variável i.
+`l++;` Acrescente +1 no valor da variável 'l'.
 
-`return (i);` Apos o while for falso retorna o valor atual de 'i' ou seja a quantidade de caracters dentro da string 's'.
+`return (l);` Apos o while for falso retorna o valor atual de 'l' ou seja a quantidade de caracters dentro da string 's'.
 
 }
