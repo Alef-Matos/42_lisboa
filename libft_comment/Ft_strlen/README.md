@@ -5,12 +5,12 @@
 ```c
 size_t ft_strlen(const char *s)
 {
-    size_t i;
+    size_t l;
 
-    i = 0;
-    while(s[i])
+    l = 0;
+    while(*s++)
         i++;
-        return (i);
+    return (l);
 }
 ```
 ### Código da função com explicação linha a linha:
