@@ -32,4 +32,4 @@ size_t ft_strlen(const char *s)
 
 }
 
-![image](https://user-images.githubusercontent.com/105389961/183395871-2be78d2d-3440-4194-8fbb-bf12238625ff.png)
+![image](https://im.ezgif.com/tmp/ezgif-1-0fceb9240e.gif)
