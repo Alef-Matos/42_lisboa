@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 15:43:06 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/06 16:59:13 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/08 10:18:54 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t ft_strlen(const char *s)
 {
-    size_t i;
+    size_t l;
 
-    i = 0;
-    while(s[i])
-        i++;
-        return (i);
+    l = 0;
+    while(*s++)
+        l++;
+    return (l);
 }
