@@ -1,3 +1,15 @@
 # Ft_strlen
 
-Todas as funções da minha "Libft" com Readme's, Explicando o que a função faz e também o que cada linha de código faz.
+```c
+#include <unistd.h>
+
+size_t ft_strlen(const char *s)
+{
+    size_t i;
+
+    i = 0;
+    while(s[i])
+        i++;
+        return (i);
+}
+```
