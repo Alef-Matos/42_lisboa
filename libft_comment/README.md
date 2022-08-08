@@ -1,6 +1,6 @@
 # Libft Comentado
 
-Todas as funções da minha "Libft" com Readme's, Explicando o que a função faz e tambpém o que cada linha de código faz.
+Todas as funções da minha "Libft" com Readm's, Explicando o que a função faz e também o que cada linha de código faz.
 
 ### III.2 Parte 1 - Funções Libc
 
