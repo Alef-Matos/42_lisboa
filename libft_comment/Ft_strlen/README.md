@@ -32,4 +32,4 @@ size_t ft_strlen(const char *s)
 
 }
 
-![image](https://im.ezgif.com/tmp/ezgif-1-92f70cc944.gif)
+![image](https://raw.githubusercontent.com/Alef-Matos/42_lisboa/master/libft_comment/Ft_strlen/imagem_strlen.gif?token=GHSAT0AAAAAABXHY2I77HUFZ2JAPFYBLYI6YXSORQA)
