@@ -35,5 +35,6 @@ char *ft_strchr(const char *s, int c)
 `return (0);` Quando a condição  do `while` for falsa retorna null.
 
 }
+### Demonstração:
 
 ![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strchr/imagem_strchr.gif)
