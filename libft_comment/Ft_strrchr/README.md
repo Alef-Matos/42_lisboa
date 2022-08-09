@@ -64,6 +64,6 @@ char *ft_strrchr(const char *s, int c)
 
 }
 
-![image](https://im.ezgif.com/tmp/ezgif-1-1ed9727adc.gif)
+![image](https://raw.githubusercontent.com/Alef-Matos/42_lisboa/master/libft_comment/Ft_strrchr/imagem_strrchrc.gif?token=GHSAT0AAAAAABXHY2I6M7XAMQ2T3GMQ5J7AYXSOQMQ)
 
 
