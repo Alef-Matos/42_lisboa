@@ -6,38 +6,23 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 16:56:00 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/09 19:40:41 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/09 22:14:31 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void ft_printstr(char *str)
-{
-    while(*str)
-        write(1, str++, 1);
-}
-
 int main (void)
 {
-    char dst[] = "Costa";
+    char dst[5];
     char src[] = "Alef";
     int tamanho;
+    int numero;
 
-    write(1, "\n", 1);
-    ft_printstr("Esta função trabalha com String verdadeira, ou seja conta o caracter vazio no final da string");
-    ft_printstr("\n\nSorce: ");
-    ft_printstr(src);
-    write(1, "\n", 1);
-    ft_printstr("Resultado do Destino antes da função: ");
-    ft_printstr(dst);
-    write(1, "\n", 1);
-    tamanho = ft_strlcpy(dst, src, 4) + '0';
-    ft_printstr("Resultado do Destino depois da função incluindo o algoritimo vazio: ");
-    ft_printstr(dst);
-    write(1, "\n", 1);
-    ft_printstr("Tamanho do Sorce incluindo algoritimo vazio: ");
-    write(1, &tamanho, 1);
-    write(1, "\n\n", 2);
-
+    numero = 4;
+    printf("\nEsta função trabalha com String verdadeira, ou seja conta o caracter vazio no final da string\n\n");
+//printf("Sorce: %s \nResultado do Destino antes da função: %s\n", src, dst);
+    tamanho = ft_strlcpy(dst, src, numero);
+    printf("Resultado do Destino depois da função incluindo o algoritimo vazio: %s\n", dst);
+    printf("Tamanho do Sorce incluindo algoritimo vazio: %d\n\n", tamanho);
 }

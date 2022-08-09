@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy copy.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 16:53:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/09 22:13:47 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/09 22:08:26 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,23 @@
 size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
     size_t  size_src;
-    size_t  index;
+    size_t  counter;
 
     if (!dst || !src)
         return (0);
     size_src = ft_strlen(src);
-    index = 0;
-    if (dstsize != 0)
+    counter = 0;
+    if (dstsize)
     {
-        while(src[index] != '\0' &&  index < (dstsize - 1))
+        while(*src &&  counter< (dstsize - 1))
         {
-            dst[index] = src[index];
-            index++;
+            dst[0] = src[0];
+            dst++;
+            src++;
+            counter++;
         }
-        dst[index] = '\0';
+        dst[0] = '\0';
+        
     }
     return (size_src);
 }
