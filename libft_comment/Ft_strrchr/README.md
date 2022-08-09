@@ -65,6 +65,6 @@ char *ft_strrchr(const char *s, int c)
 }
 ### Demonstração:
 
-![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strrchr/imagem_strrchrc.gif)
+![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strrchr/imagem_strrchr.gif)
 
 
