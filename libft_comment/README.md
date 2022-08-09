@@ -36,7 +36,7 @@ Todas as funções da minha "Libft" com Readm's, Explicando o que a função faz
 
 ### Funções da biblioteca `<string.h>`
 - [x] Função [`ft_strlen`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strlen) - Teste de caracteres alfabéticos. 
-- [ ] Função `ft_strlcpy` - Copiar strings. 
+- [x] Função `ft_strlcpy` - Copiar strings. 
 - [ ] Função `ft_strlcat` - Concatenação de strings limitadas por tamanho. 
 - [ ] Função `ft_strnstr` - Localizar uma substring em uma string (limitada por tamanho).
 - [x] Função [`ft_strchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_strchr) - localizar caractere na string (primeira ocorrência).
