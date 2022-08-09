@@ -70,4 +70,4 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 }
 ### Demonstração:
 
-![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_/imagem_.gif)
+![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strlcpy/imagem_strlcpy.gif)
