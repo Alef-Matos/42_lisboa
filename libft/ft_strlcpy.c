@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 16:53:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/09 18:51:58 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/09 19:38:37 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-    size_t size_src;
-    size_t index;
+    size_t  size_src;
+    size_t  index;
 
     size_src = ft_strlen(src);
     index = 0;
@@ -32,4 +32,3 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
     }
     return (size_src);
 }
-
