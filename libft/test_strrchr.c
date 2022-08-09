@@ -6,11 +6,10 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 09:07:01 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/09 19:39:48 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/09 19:40:56 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 #include <string.h>
 

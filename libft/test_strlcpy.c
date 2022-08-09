@@ -6,11 +6,10 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 16:56:00 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/09 19:39:43 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/09 19:40:41 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 static void ft_printstr(char *str)
