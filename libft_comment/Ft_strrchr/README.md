@@ -52,11 +52,11 @@ char *ft_strrchr(const char *s, int c)
 
 {
 
-`s--;`Regressa uma posiçao no ponteiro de 's'.
+`s--;`Regressa uma posiçao no ponteiro de string 's'.
 
-`if(*s == c)` Se o ponteiro na posiçao atual for igual a 'c', executa o comando abaixo.
+`if(*s == c)` Se o ponteiro na posiçao atual for igual a 'c', executa o codigo abaixo.
 
-`return ((char *)s);`Retorna a posição  atual do ponteiro 's'.
+`return ((char *)s);` Retorna a posição atual do ponteiro de string 's'.
 
 }
 
