@@ -6,11 +6,11 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 15:43:06 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/08 10:19:11 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/09 19:48:12 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 size_t ft_strlen(const char *s)
 {

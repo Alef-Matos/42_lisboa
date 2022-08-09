@@ -25,7 +25,6 @@ char *ft_strrchr(const char *s, int c)
 }
 ```
 ### Código da função com explicação linha a linha:
-`#include <unistd.h>` 
 
 `#include "libft.h"` Incluir biblioteca pessoal.  
 

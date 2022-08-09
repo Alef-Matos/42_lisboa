@@ -14,6 +14,7 @@ size_t ft_strlen(const char *s)
 }
 ```
 ### Código da função com explicação linha a linha:
+`#include "libft.h"` Biblioteca onde se localiza todas as funções nescessárias para o exercício.
 
 `size_t ft_strlen(const char *s)` Declaração da função.
 

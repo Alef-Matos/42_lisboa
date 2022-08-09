@@ -1,30 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/06 09:05:09 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/09 19:48:21 by almatos          ###   ########.fr       */
+/*   Created: 2022/08/09 16:53:35 by almatos           #+#    #+#             */
+/*   Updated: 2022/08/09 19:38:37 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-    int size_str;
-    const char *s_copy;
+    size_t  size_src;
+    size_t  index;
 
-    s_copy = s;
-    size_str = ft_strlen(s);
-    s = (s_copy + size_str);
-    while(*s != *s_copy && c != *s)
+    size_src = ft_strlen(src);
+    index = 0;
+    if (!dst || !src)
+        return (0);
+    if (dstsize != 0)
     {
-        s--;
-        if(*s == c)
-           return ((char *)s);
+        while(src[index] != '\0' &&  index < (dstsize - 1))
+        {
+            dst[index] = src[index];
+            index++;
+        }
+        dst[index] = '\0';
     }
-    return (0);
+    return (size_src);
 }
