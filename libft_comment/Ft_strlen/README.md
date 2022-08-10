@@ -1,5 +1,5 @@
 # Ft_strlen  
-    Foi usado operações com pointers como base para a recriação da função.
+    Foi usado operações com pointeiros como base para a recriação da função.
     
 ### Código da função:
 ```c

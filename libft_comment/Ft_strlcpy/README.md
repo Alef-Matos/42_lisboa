@@ -71,3 +71,32 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 ### Demonstração:
 
 ![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strlcpy/imagem_strlcpy.gif)
+
+### Código da função (Outra maneira de se fazer uasando operações com pointeiros ):
+```c
+#include "libft.h"
+
+size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
+{
+    size_t  size_src;
+    size_t  counter;
+
+    if (!dst || !src)
+        return (0);
+    size_src = ft_strlen(src);
+    counter = 0;
+    if (dstsize)
+    {
+        while(*src &&  counter< (dstsize - 1))
+        {
+            dst[0] = src[0];
+            dst++;
+            src++;
+            counter++;
+        }
+        dst[0] = '\0';
+        
+    }
+    return (size_src);
+}
+```
