@@ -6,68 +6,67 @@
 ```c
 #include "libft.h"
 
-size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-    size_t  size_src;
-    size_t  index;
-
-    if (!dst || !src)
-        return (0);
-    size_src = ft_strlen(src);
+    size_t index;
+    size_t size_dst;
+    if(dstsize <= ft_strlen(dst))
+        return (dstsize + ft_strlen(src)); 
+    size_dst = ft_strlen(dst);
     index = 0;
-    if (dstsize != 0)
+    while(src[index] && size_dst + 1 < dstsize)
     {
-        while(src[index] != '\0' &&  index < (dstsize - 1))
-        {
-            dst[index] = src[index];
-            index++;
-        }
-        dst[index] = '\0';
+        dst[size_dst] = src[index]; 
+        index++;
+        size_dst++;
     }
-    return (size_src);
+    dst[size_dst] = '\0';
+    return (ft_strlen(dst) + ft_strlen(&src[index]));
 }
 ```
 ### Código da função com explicação linha a linha:
 `#include "libft.h"` Biblioteca onde se localiza todas as funções nescessárias para o exercício.
 
-`size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)` Declaração da função.
+`size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)` Declaração da função.
 
 {
 
-`size_t  size_src;` Declarar variável do tipo 'size_t'(Valor sem sinal).
+`size_t index;` Declarar variável do tipo 'size_t'(Valor sem sinal).
 
-`size_t  index;` Declarar variável do tipo 'size_t'(Valor sem sinal).
+`size_t size_dst;` Declarar variável do tipo 'size_t'(Valor sem sinal).
 
 
-`size_src = ft_strlen(src);` Será atribuido o retorno da função de contagem da string 'src'.
+`if(dstsize <= ft_strlen(dst))` Se o 'dstzize'(valor nescesário para setar a quantidade de characteres que serão concatenados para o 'dest') for menor ou igual a quantidade de caracters no pointeiro de string 'dst', o codigo abaixo é executado.
 
-`if (!dst || !src)` Se tiver falha na lógica executa o código abaixo.
+{
 
-`return (0);` Para o programa.
+`return (dstsize + ft_strlen(src)); ` retornarar a quantidade de caracteres do ponteiro de string 'src' + o 'dstzize' e a função termina aqui.
+
+}
+
+`size_dst = ft_strlen(dst);` Se o 'IF' acima for verdadeiro o código seguirá nessa linha, atribui a contagem da string 'dst' dentro da variável 'size_dst'.
 
 `index = 0;` Variável ultilizada para referenciar a posição dentro de uma string e registrar a quantidade de loops feitos pelo while.
 
-`if (dstsize != 0)` Se o 'dstzize'(valor nescesário para setar a quantidade de characteres que serão copiados para o 'dest') for diferente que 0, o codigo abaixo é executado. 
+`while(src[index] && size_dst + 1 < dstsize)` Enquanto a string 'src' na posição 'index' for diferente que o fim da string e a variável 'size_dst'(contem a quantos caracteres tem a string 'dst') + 1 (+1 nescessário para abrir mais um espaço na string) for menor que o 'dstsize', será executado o comando abaixo.
 
 {
 
-`while(src[index] != '\0' &&  index < (dstsize - 1))` Enquanto a string 'src' na posição 'index' for diferente que o fim da string e a variável 'index' for menor que o 'dstsize' -1 (-1 nescessário pois a string começa com 0 e não 1), será executado o comando abaixo.
+`dst[size_dst] = src[index];` String 'dst' na posição do 'size_dts'(final da string dst) receberá o valor da string 'src' na posição do 'index'. Fazendo assim até o 'while' for falso.
 
-{
+`index++;` Será adiconado +1 na contagem do 'index'.
 
-`dst[index] = src[index];` String 'dst' na posição do index receberá o valor da string 'src' na mesma posição. Fazendo assim até o 'while' for falso.
-
-`index++;` Será adiconado +1 na contagem do index.
+`size_dst++;` será adicionado +1 na contagem do 'size_dst'.
 
 }
 
-`dst[index] = '\0';` Após o 'while' for falso essa linha adicionara o caracter de fim de string na string 'dst'.
+`dst[size_dst] = '\0';` Após o 'while' for falso essa linha adicionara o caracter de fim de string no final da string 'dst'.
 
 }
 
-`return (size_src);` O program retorna o tamanho do 'src' que está dentro da variável 'size_src'.
+`return (ft_strlen(dst) + ft_strlen(&src[index]));` O program retorna o tamanho do 'dst' + o tamano do 'src' começando a partir da posição do 'index'.
 
 }
 ### Demonstração:
 
-![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strlcpy/imagem_strlcpy.gif)
+![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/)
