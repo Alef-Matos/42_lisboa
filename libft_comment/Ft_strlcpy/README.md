@@ -72,7 +72,7 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 ![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strlcpy/imagem_strlcpy.gif)
 
-### Código da função (Outra maneira de se fazer uasando operações com pointeiros ):
+### Código da função (Outra maneira de se fazer uasando operações com ponteiros ):
 ```c
 #include "libft.h"
 
