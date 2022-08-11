@@ -1,7 +1,7 @@
 # Libft Makefile
 
 ### Código do Makefile:
-```c
+```Makefile
 NOME = libft.a
 CFLAGS	= -Wall -Wextra -Werror
 RM		= @rm -f
