@@ -4,7 +4,7 @@
 ```Makefile
 NOME = libft.a
 CFLAGS	= -Wall -Wextra -Werror
-RM		= @rm -f
+RM = @rm -f
 INCLUDE	= libft.h
 OBJETOS	= $(SOURCES:.c=.o)
 ARQUIVO	= @ar -rc
