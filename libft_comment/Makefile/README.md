@@ -14,43 +14,43 @@ MAIN_NOME = teste.c
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c 
 MAIN = main_teste
 
-all:	$(NOME)
+all:		$(NOME)
 
 $(NOME):	$(OBJETOS) $(INCLUDE)
-			$(ARQUIVO) $(NOME) $(OBJETOS)
-			$(RANLIB) $(NOME)
-			$(MENSAGEM)
+		$(ARQUIVO) $(NOME) $(OBJETOS)
+		$(RANLIB) $(NOME)
+		$(MENSAGEM)
 clear: 
-			$(RM) $(OBJETOS)
-			$(MENSAGEM)
+		$(RM) $(OBJETOS)
+		$(MENSAGEM)
 
 clear_main:		
-			$(RM) $(MAIN)
+		$(RM) $(MAIN)
 
 clear_a:		
-			$(RM) $(NOME)
+		$(RM) $(NOME)
 
 ajuda:		
-			@echo "COMANDOS DISPONÍVEIS:"	
-			@echo ""
-			@echo "clear: "
-			@echo "clear_a: "
-			@echo "clear_man: "
-			@echo "run: "
-			@echo "fclean: "
-			@echo "re: "
+		@echo "COMANDOS DISPONÍVEIS:"	
+		@echo ""
+		@echo "clear: "
+		@echo "clear_a: "
+		@echo "clear_man: "
+		@echo "run: "
+		@echo "fclean: "
+		@echo "re: "
 
 run:
-			gcc $(MAIN_NOME) $(NOME) $(CFLAGS) -o main
-			./main_test
+		gcc $(MAIN_NOME) $(NOME) $(CFLAGS) -o main
+		./main_test
 
 fclean:		clean
-			$(RM) $(NOME)
-			$(MENSAGEM)
+		$(RM) $(NOME)
+		$(MENSAGEM)
 
-re:			fclean all
-			$(MENSAGEM)
+re:		fclean all
+		$(MENSAGEM)
 
-.PHONY: all clean fclean re
+.PHONY: 	all clean fclean re
 
 ```
