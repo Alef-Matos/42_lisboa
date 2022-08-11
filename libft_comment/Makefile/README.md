@@ -3,7 +3,7 @@
 ### Código do Makefile:
 ```Makefile
 NOME = libft.a
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 RM = @rm -f
 INCLUDE	= libft.h
 OBJETOS	= $(SOURCES:.c=.o)
