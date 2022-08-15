@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/15 16:59:17 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/15 17:17:39 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,40 +35,45 @@ all:	$(NAME)
 $(NAME):	$(OBJECTS) $(INCLUDE)
 			$(ARQ_LIB) $(NAME) $(OBJECTS)
 			$(RAN_LIB) $(NAME)
+			clear
 			$(MESSAGE)
 
 bonus:		$(NAME) $(BOUS_OBJECTS) 
 			$(ARQ_LIB) $(NAME) $(BOUS_OBJECTS) 
 			$(RAN_LIB) $(NAME)
+			clear
 			$(MESSAGE)
-clear: 
+clean: 
 			$(RM) $(OBJECTS) $(BOUS_OBJECTS)
 			$(MESSAGE)
 
-clear_main:		
+main:		
 			$(RM) $(MAIN)
 			$(MESSAGE)
 
-clear_a:		
+a:		
 			$(RM) $(NAME)  
 			$(MESSAGE)
 
 help:		
 			@echo "COMANDOS DISPONÍVEIS:"	
 			@echo ""
-			@echo "clear: "
-			@echo "clear_a: "
-			@echo "clear_man: "
-			@echo "run: "
+			@echo "clean: Limpar objetos"
+			@echo "a: Exclui arquivo .a"
+			@echo "man: Exclui o main_test "
+			@echo "run: Compila a biblioteca inteira e executa o main_teste completo "
 			@echo "fclean: "
 			@echo "re: "
 
-run:
+run:		bonus
 			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
+			$(RM) $(OBJECTS) $(BOUS_OBJECTS) 
+			clear
 			$(MAIN)
+			$(RM) $(MAIN) $(NAME)
 
 fclean:		clean
-			$(RM) $(NAME)
+			$(RM) $(NAME) $(BOUS_OBJECTS)
 			$(MESSAGE)
 
 re:			fclean all
