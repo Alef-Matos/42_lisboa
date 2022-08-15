@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/15 16:40:51 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/15 16:43:35 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ RAN_LIB = @ranlib
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c 
 OBJECTS	= $(SOURCES:.c=.o)
 
-BONUS_SOURCES = ft_striinverse.c
+BONUS_SOURCES = ft_strreverse_bonus.c
 BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
 MESSAGE = @echo "Concluido ✔︎"
