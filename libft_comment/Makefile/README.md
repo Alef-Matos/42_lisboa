@@ -2,55 +2,70 @@
 
 ### Código do Makefile:
 ```Makefile
-NOME = libft.a
-CFLAGS = -Wall -Wextra -Werror
-RM = @rm -f
+NAME = libft.a
+
+CFLAGS	= -Wall -Wextra -Werror
+RM		= @rm -f
 INCLUDE	= libft.h
-OBJETOS	= $(SOURCES:.c=.o)
-ARQUIVO	= @ar -rc
-RANLIB = @ranlib
-MENSAGEM = @echo "Concluido ✔︎"
-MAIN_NOME = teste.c
+ARQ_LIB	= @ar -rc
+RAN_LIB = @ranlib
+
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c 
+OBJECTS	= $(SOURCES:.c=.o)
+
+BONUS_SOURCES = ft_strreverse_bonus.c
+BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
+
+MESSAGE = @echo "Concluido ✔︎"
 MAIN = main_teste
+MAIN_NAME = teste.c
+BIN = -o main
+CC = gcc
 
-all:		$(NOME)
+all:	$(NAME)
 
-$(NOME):	$(OBJETOS) $(INCLUDE)
-		$(ARQUIVO) $(NOME) $(OBJETOS)
-		$(RANLIB) $(NOME)
-		$(MENSAGEM)
+$(NAME):	$(OBJECTS) $(INCLUDE)
+			$(ARQ_LIB) $(NAME) $(OBJECTS)
+			$(RAN_LIB) $(NAME)
+			$(MESSAGE)
+
+bonus:		$(NAME) $(BOUS_OBJECTS) 
+			$(ARQ_LIB) $(NAME) $(BOUS_OBJECTS) 
+			$(RAN_LIB) $(NAME)
+			$(MESSAGE)
 clear: 
-		$(RM) $(OBJETOS)
-		$(MENSAGEM)
+			$(RM) $(OBJECTS) $(BOUS_OBJECTS)
+			$(MESSAGE)
 
 clear_main:		
-		$(RM) $(MAIN)
+			$(RM) $(MAIN)
+			$(MESSAGE)
 
 clear_a:		
-		$(RM) $(NOME)
+			$(RM) $(NAME)  
+			$(MESSAGE)
 
-ajuda:		
-		@echo "COMANDOS DISPONÍVEIS:"	
-		@echo ""
-		@echo "clear: "
-		@echo "clear_a: "
-		@echo "clear_man: "
-		@echo "run: "
-		@echo "fclean: "
-		@echo "re: "
+help:		
+			@echo "COMANDOS DISPONÍVEIS:"	
+			@echo ""
+			@echo "clear: "
+			@echo "clear_a: "
+			@echo "clear_man: "
+			@echo "run: "
+			@echo "fclean: "
+			@echo "re: "
 
 run:
-		gcc $(MAIN_NOME) $(NOME) $(CFLAGS) -o main
-		./main_test
+			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
+			./$(MAIN)
 
 fclean:		clean
-		$(RM) $(NOME)
-		$(MENSAGEM)
+			$(RM) $(NAME)
+			$(MESSAGE)
 
-re:		fclean all
-		$(MENSAGEM)
+re:			fclean all
+			$(MESSAGE)
 
-.PHONY: 	all clean fclean re
+.PHONY: all clean fclean re
 
 ```

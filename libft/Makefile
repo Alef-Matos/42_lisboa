@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/15 16:43:35 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/15 16:59:17 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,10 +24,10 @@ OBJECTS	= $(SOURCES:.c=.o)
 BONUS_SOURCES = ft_strreverse_bonus.c
 BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
-MESSAGE = @echo "Concluido ✔︎"
-MAIN = main_teste
-MAIN_NAME = teste.c
-BIN = -o main
+MESSAGE = @echo "Congratulations ✔︎"
+MAIN_NAME = main_test.c
+MAIN = ./test_exec
+BIN = -o test_exec
 CC = gcc
 
 all:	$(NAME)
@@ -65,7 +65,7 @@ help:
 
 run:
 			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
-			./$(MAIN)
+			$(MAIN)
 
 fclean:		clean
 			$(RM) $(NAME)
