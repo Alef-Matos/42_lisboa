@@ -1,5 +1,7 @@
 # Ft_strnstr 
+```
     Função onde se procura o conteudo de uma string menor dentro de uma string maior e retorna tudo a partir do primeiro caracter encontrado. Essa fução tem um parâmetro a mais que seria o range da busca na string maior.
+ ```
     
 ### Código da função:
 ```c
@@ -27,6 +29,5 @@ char    *ft_strnstr(const char *str, const char *find, size_t len)
         index++;
     }
     return (0);
-}
 }
 ```
