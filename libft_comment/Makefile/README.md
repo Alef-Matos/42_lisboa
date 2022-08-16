@@ -10,16 +10,17 @@ INCLUDE	= libft.h
 ARQ_LIB	= @ar -rc
 RAN_LIB = @ranlib
 
-SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c 
+SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
+			ft_strnstr.c
 OBJECTS	= $(SOURCES:.c=.o)
 
 BONUS_SOURCES = ft_strreverse_bonus.c
 BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
-MESSAGE = @echo "Concluido ✔︎"
-MAIN = main_teste
-MAIN_NAME = teste.c
-BIN = -o main
+MESSAGE = @echo "Congratulations ✔︎"
+MAIN_NAME = main_test.c
+MAIN = ./test_exec
+BIN = -o test_exec
 CC = gcc
 
 all:	$(NAME)
@@ -27,40 +28,45 @@ all:	$(NAME)
 $(NAME):	$(OBJECTS) $(INCLUDE)
 			$(ARQ_LIB) $(NAME) $(OBJECTS)
 			$(RAN_LIB) $(NAME)
+			clear
 			$(MESSAGE)
 
 bonus:		$(NAME) $(BOUS_OBJECTS) 
 			$(ARQ_LIB) $(NAME) $(BOUS_OBJECTS) 
 			$(RAN_LIB) $(NAME)
+			clear
 			$(MESSAGE)
-clear: 
+clean: 
 			$(RM) $(OBJECTS) $(BOUS_OBJECTS)
 			$(MESSAGE)
 
-clear_main:		
+main:		
 			$(RM) $(MAIN)
 			$(MESSAGE)
 
-clear_a:		
+a:		
 			$(RM) $(NAME)  
 			$(MESSAGE)
 
 help:		
 			@echo "COMANDOS DISPONÍVEIS:"	
 			@echo ""
-			@echo "clear: "
-			@echo "clear_a: "
-			@echo "clear_man: "
-			@echo "run: "
+			@echo "clean: Limpar objetos"
+			@echo "a: Exclui arquivo .a"
+			@echo "man: Exclui o main_test "
+			@echo "run: Compila a biblioteca inteira e executa o main_teste completo "
 			@echo "fclean: "
 			@echo "re: "
 
-run:
+run:		bonus
 			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
-			./$(MAIN)
+			$(RM) $(OBJECTS) $(BOUS_OBJECTS) 
+			clear
+			$(MAIN)
+			$(RM) $(MAIN) $(NAME)
 
 fclean:		clean
-			$(RM) $(NAME)
+			$(RM) $(NAME) $(BOUS_OBJECTS)
 			$(MESSAGE)
 
 re:			fclean all
