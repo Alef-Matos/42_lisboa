@@ -19,5 +19,5 @@ char    *ft_strstr(const char *str, const char *find)
         }
         index++;
     }
-    return (0);
+    return (NULL);
 }

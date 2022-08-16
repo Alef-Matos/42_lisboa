@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/16 14:54:38 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/16 15:14:33 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/16 15:59:09 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ char    *ft_strnstr(const char *str, const char *find, size_t len)
             return ((char *)str + index);
         index++;
     }
-    return (0);
+    return (NULL);
 }
