@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/15 17:17:39 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/16 15:03:48 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ INCLUDE	= libft.h
 ARQ_LIB	= @ar -rc
 RAN_LIB = @ranlib
 
-SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c 
+SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
+			ft_strnstr.c
 OBJECTS	= $(SOURCES:.c=.o)
 
 BONUS_SOURCES = ft_strreverse_bonus.c
