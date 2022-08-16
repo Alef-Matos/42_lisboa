@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/16 15:50:48 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/16 22:08:44 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
 MESSAGE = @echo "Congratulations ✔︎"
 MAIN_NAME = main_test.c
-MAIN = ./test_exec
+MAIN = @./test_exec
 BIN = -o test_exec
 CC = gcc
 
