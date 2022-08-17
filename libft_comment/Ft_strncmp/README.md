@@ -1,8 +1,7 @@
 # Ft_strncmp
 ```
-Foi usado aritmética de pointeiros como base para a recriação da função.
-A função compara duas strings tendo como diferêncial da 'strcmp'
-a limitação de tamanho.
+Foi usado aritmética de pointeiros como base para a recriação da função. A função compara duas strings tendo como 
+diferêncial da 'strcmp' a limitação de tamanho.
 ```
     
 ### Código da função:
