@@ -6,17 +6,18 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/16 22:08:44 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/17 12:42:57 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 CFLAGS	= -Wall -Wextra -Werror
+CC = gcc
 RM		= @rm -f
 INCLUDE	= libft.h
-ARQ_LIB	= @ar -rc
-RAN_LIB = @ranlib
+REPOSITORY	= @ar -rc
+INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
 			ft_strnstr.c
@@ -28,50 +29,32 @@ BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 MESSAGE = @echo "Congratulations ✔︎"
 MAIN_NAME = main_test.c
 MAIN = @./test_exec
+RM_MAIN = $(RM) test_exec
 BIN = -o test_exec
-CC = gcc
 
 all:	$(NAME)
 
 $(NAME):	$(OBJECTS) $(INCLUDE)
-			$(ARQ_LIB) $(NAME) $(OBJECTS)
-			$(RAN_LIB) $(NAME)
+			$(REPOSITORY) $(NAME) $(OBJECTS)
+			$(INDEX) $(NAME)
 			clear
 			$(MESSAGE)
 
 bonus:		$(NAME) $(BOUS_OBJECTS) 
-			$(ARQ_LIB) $(NAME) $(BOUS_OBJECTS) 
-			$(RAN_LIB) $(NAME)
+			$(REPOSITORY) $(NAME) $(BOUS_OBJECTS) 
+			$(INDEX) $(NAME)
 			clear
 			$(MESSAGE)
 clean: 
 			$(RM) $(OBJECTS) $(BOUS_OBJECTS)
 			$(MESSAGE)
 
-main:		
-			$(RM) $(MAIN)
-			$(MESSAGE)
-
-a:		
-			$(RM) $(NAME)  
-			$(MESSAGE)
-
-help:		
-			@echo "COMANDOS DISPONÍVEIS:"	
-			@echo ""
-			@echo "clean: Limpar objetos"
-			@echo "a: Exclui arquivo .a"
-			@echo "man: Exclui o main_test "
-			@echo "run: Compila a biblioteca inteira e executa o main_teste completo "
-			@echo "fclean: "
-			@echo "re: "
-
 run:		bonus
 			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
 			$(RM) $(OBJECTS) $(BOUS_OBJECTS) 
 			clear
 			$(MAIN)
-			$(RM) $(MAIN) $(NAME)
+			$(RM_MAIN) $(NAME)
 
 fclean:		clean
 			$(RM) $(NAME) $(BOUS_OBJECTS)
@@ -79,5 +62,14 @@ fclean:		clean
 
 re:			fclean all
 			$(MESSAGE)
+
+help:		
+			@echo "COMANDOS DISPONÍVEIS:"	
+			@echo ""
+			@echo "bonus: Inclui funções bonus a libft.a"
+			@echo "clean: Limpar objetos"
+			@echo "run: Compila a biblioteca inteira e executa o main_teste completo e limpa tudo "
+			@echo "fclean: "
+			@echo "re: "
 
 .PHONY: all clean fclean re
