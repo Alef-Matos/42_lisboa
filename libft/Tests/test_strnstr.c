@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-
+//TESTE DA FUNÇÃO FT_STRNSTR
 int main(void)
 {
     char    *s1 = "abcabdooo";

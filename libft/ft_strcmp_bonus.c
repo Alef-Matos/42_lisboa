@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strreverse_bonus.c                              :+:      :+:    :+:   */
+/*   ft_strcmp_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/17 19:39:12 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/17 19:39:14 by almatos          ###   ########.fr       */
+/*   Created: 2022/08/17 19:51:45 by almatos           #+#    #+#             */
+/*   Updated: 2022/08/17 19:57:18 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strreverse(char *str)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-    int cont;
-    int i;
-    char    swap;
-    
-    cont = ft_strlen(str);
-    i = 0;
-    while(str[i] && i <= cont -1)
-    {
-        swap = str[i];
-        str[i] = str[cont -1];
-        str[cont -1] = swap;
-        i++;
-        cont--;
-    }  
-    return (str);
+	while ((*s1 != '\0') && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
