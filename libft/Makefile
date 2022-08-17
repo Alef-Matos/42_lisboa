@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/17 12:42:57 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/17 12:45:53 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,19 +49,19 @@ clean:
 			$(RM) $(OBJECTS) $(BOUS_OBJECTS)
 			$(MESSAGE)
 
-run:		bonus
-			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
-			$(RM) $(OBJECTS) $(BOUS_OBJECTS) 
-			clear
-			$(MAIN)
-			$(RM_MAIN) $(NAME)
-
 fclean:		clean
 			$(RM) $(NAME) $(BOUS_OBJECTS)
 			$(MESSAGE)
 
 re:			fclean all
 			$(MESSAGE)
+
+run:		bonus
+			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
+			$(RM) $(OBJECTS) $(BOUS_OBJECTS) 
+			clear
+			$(MAIN)
+			$(RM_MAIN) $(NAME)
 
 help:		
 			@echo "COMANDOS DISPONÍVEIS:"	
