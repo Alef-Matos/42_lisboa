@@ -4,11 +4,11 @@
 ```Makefile
 NAME = libft.a
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 CC = gcc
-RM		= @rm -f
+RM = @rm -f
 INCLUDE	= libft.h
-REPOSITORY	= @ar -rc
+REPOSITORY = @ar -rc
 INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
@@ -25,7 +25,7 @@ RM_MAIN = $(RM) test_exec
 BIN = -o test_exec
 NORMI = @norminette $(SOURCES) $(BONUS_SOURCES)
 
-all:	$(NAME)
+all:		$(NAME)
 
 $(NAME):	$(OBJECTS) $(INCLUDE)
 			$(REPOSITORY) $(NAME) $(OBJECTS)
