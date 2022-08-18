@@ -33,7 +33,7 @@ RM_MAIN = $(RM) test_exec
 BIN = -o test_exec
 NORMI = @norminette $(SOURCES) $(BONUS_SOURCES)
 
-all:	$(NAME)
+all:		$(NAME)
 
 $(NAME):	$(OBJECTS) $(INCLUDE)
 			$(REPOSITORY) $(NAME) $(OBJECTS)
