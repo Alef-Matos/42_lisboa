@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/17 19:52:29 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/18 12:16:05 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ MAIN_NAME = main_test.c
 MAIN = @./test_exec
 RM_MAIN = $(RM) test_exec
 BIN = -o test_exec
+NORMI = @norminette $(SOURCES) $(BONUS_SOURCES)
 
 all:	$(NAME)
 
@@ -62,6 +63,9 @@ run:		bonus
 			clear
 			$(MAIN)
 			$(RM_MAIN) $(NAME)
+
+normi:
+			$(NORMI)
 
 help:		
 			@echo "COMANDOS DISPONÍVEIS:"	
