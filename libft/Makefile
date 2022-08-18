@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/18 12:16:05 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/18 12:29:33 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,9 @@ NAME = libft.a
 
 CFLAGS	= -Wall -Wextra -Werror
 CC = gcc
-RM		= @rm -f
-INCLUDE	= libft.h
-REPOSITORY	= @ar -rc
+RM = @rm -f
+INCLUDE = libft.h
+REPOSITORY = @ar -rc
 INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
