@@ -3,14 +3,16 @@
     
 ### Código da função:
 ```c
-size_t ft_strlen(const char *s)
-{
-    size_t l;
+#include "libft.h"
 
-    l = 0;
-    while(*s++)
-        i++;
-    return (l);
+size_t	ft_strlen(const char *s)
+{
+	size_t	l;
+
+	l = 0;
+	while (*s++)
+		l++;
+	return (l);
 }
 ```
 ### Código da função com explicação linha a linha:

@@ -5,65 +5,42 @@
 NAME = libft.a
 
 CFLAGS	= -Wall -Wextra -Werror
+CC = gcc
 RM		= @rm -f
 INCLUDE	= libft.h
-ARQ_LIB	= @ar -rc
-RAN_LIB = @ranlib
+REPOSITORY	= @ar -rc
+INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
-			ft_strnstr.c
+			ft_strnstr.c ft_strncmp.c
 OBJECTS	= $(SOURCES:.c=.o)
 
-BONUS_SOURCES = ft_strreverse_bonus.c
+BONUS_SOURCES = ft_strreverse_bonus.c ft_strstr_bonus.c ft_strcmp_bonus.c
 BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
 MESSAGE = @echo "Congratulations ✔︎"
 MAIN_NAME = main_test.c
-MAIN = ./test_exec
+MAIN = @./test_exec
+RM_MAIN = $(RM) test_exec
 BIN = -o test_exec
-CC = gcc
+NORMI = @norminette $(SOURCES) $(BONUS_SOURCES)
 
 all:	$(NAME)
 
 $(NAME):	$(OBJECTS) $(INCLUDE)
-			$(ARQ_LIB) $(NAME) $(OBJECTS)
-			$(RAN_LIB) $(NAME)
+			$(REPOSITORY) $(NAME) $(OBJECTS)
+			$(INDEX) $(NAME)
 			clear
 			$(MESSAGE)
 
 bonus:		$(NAME) $(BOUS_OBJECTS) 
-			$(ARQ_LIB) $(NAME) $(BOUS_OBJECTS) 
-			$(RAN_LIB) $(NAME)
+			$(REPOSITORY) $(NAME) $(BOUS_OBJECTS) 
+			$(INDEX) $(NAME)
 			clear
 			$(MESSAGE)
 clean: 
 			$(RM) $(OBJECTS) $(BOUS_OBJECTS)
 			$(MESSAGE)
-
-main:		
-			$(RM) $(MAIN)
-			$(MESSAGE)
-
-a:		
-			$(RM) $(NAME)  
-			$(MESSAGE)
-
-help:		
-			@echo "COMANDOS DISPONÍVEIS:"	
-			@echo ""
-			@echo "clean: Limpar objetos"
-			@echo "a: Exclui arquivo .a"
-			@echo "man: Exclui o main_test "
-			@echo "run: Compila a biblioteca inteira e executa o main_teste completo "
-			@echo "fclean: "
-			@echo "re: "
-
-run:		bonus
-			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
-			$(RM) $(OBJECTS) $(BOUS_OBJECTS) 
-			clear
-			$(MAIN)
-			$(RM) $(MAIN) $(NAME)
 
 fclean:		clean
 			$(RM) $(NAME) $(BOUS_OBJECTS)
@@ -72,6 +49,24 @@ fclean:		clean
 re:			fclean all
 			$(MESSAGE)
 
-.PHONY: all clean fclean re
+run:		bonus
+			$(CC) $(MAIN_NAME) $(NAME) $(CFLAGS) $(BIN) 
+			$(RM) $(OBJECTS) $(BOUS_OBJECTS) 
+			clear
+			$(MAIN)
+			$(RM_MAIN) $(NAME)
 
+normi:
+			$(NORMI)
+
+help:		
+			@echo "COMANDOS DISPONÍVEIS:"	
+			@echo ""
+			@echo "bonus: Inclui funções bonus a libft.a"
+			@echo "clean: Limpar objetos"
+			@echo "run: Compila a biblioteca inteira e executa o main_teste completo e limpa tudo "
+			@echo "fclean: "
+			@echo "re: "
+
+.PHONY: all clean fclean re
 ```

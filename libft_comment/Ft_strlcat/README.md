@@ -8,20 +8,21 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-    size_t index;
-    size_t size_dst;
-    if(dstsize <= ft_strlen(dst))
-        return (dstsize + ft_strlen(src)); 
-    size_dst = ft_strlen(dst);
-    index = 0;
-    while(src[index] && size_dst + 1 < dstsize)
-    {
-        dst[size_dst] = src[index]; 
-        index++;
-        size_dst++;
-    }
-    dst[size_dst] = '\0';
-    return (ft_strlen(dst) + ft_strlen(&src[index]));
+	size_t	index;
+	size_t	size_dst;
+
+	if (dstsize <= ft_strlen(dst))
+		return (dstsize + ft_strlen(src));
+	size_dst = ft_strlen(dst);
+	index = 0;
+	while (src[index] && size_dst + 1 < dstsize)
+	{
+		dst[size_dst] = src[index];
+		index++;
+		size_dst++;
+	}
+	dst[size_dst] = '\0';
+	return (ft_strlen(dst) + ft_strlen(&src[index]));
 }
 ```
 ### Código da função com explicação linha a linha:

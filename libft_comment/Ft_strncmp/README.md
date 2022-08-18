@@ -8,7 +8,7 @@ diferêncial da 'strcmp' a limitação de tamanho.
 ```c
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n) 
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	while ((n != 0 && *s1 != '\0') && (*s1 == *s2))
 	{

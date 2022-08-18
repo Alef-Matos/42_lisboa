@@ -4,15 +4,15 @@
     
 ### Código da função:
 ```c
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-    while (*s != '\0' && c != *s)
-    {
-      s++;
-      if (c == *s)
-        return ((char *)s);
-    }
-    return (0);
+	while (*s != '\0' && c != *s)
+	{
+		s++;
+		if (c == *s)
+			return ((char *)s);
+	}
+	return (0);
 }
 ```
 ### Código da função com explicação linha a linha:
