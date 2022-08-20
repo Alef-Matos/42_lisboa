@@ -12,17 +12,37 @@ size_t	ft_strlen(const char *s)
 	return (l);
 }
 
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+	size_t	index;
+	size_t	size_dst;
+
+	if (dstsize <= ft_strlen(dst))
+		return (dstsize + ft_strlen(src));
+	size_dst = ft_strlen(dst);
+	index = 0;
+	while (src[index] && size_dst + 1 < dstsize)
+	{
+		dst[size_dst] = src[index];
+		index++;
+		size_dst++;
+	}
+	dst[size_dst] = '\0';
+	return (ft_strlen(dst) + ft_strlen(&src[index]));
+}
+
 int main (void)
 {
-   
-    char test[] = "abacate";
-    int n;
-    int n2;
+    char dst[] = "AB";
+    char src[] = "CDE";
+    int tamanho;
+    int numero;
 
-    n2 = strlen(test) + '0';
-    n = ft_strlen(test) + '0';
-    write(1, &n, 1);
-    write(1, "\n", 1);
-    write(1, &n2, 1);
-    write(1, "\n", 1);
+    numero = 6; //Considerar o caracter de final de string '/0'
+    printf("\nEsta função trabalha com String verdadeira, ou seja conta o caracter vazio no final da string\n\n");
+    printf("Destino: %s \nSource: %s\n", dst, src);
+    printf("Destino + Source + '\\0': %s%s\n", dst, src);
+    tamanho = ft_strlcat(dst, src, numero);
+    printf("Resultado do Destino depois da função incluindo o algoritimo vazio: %s\n", dst);
+    printf("Retorno:Tamanho do  Destino + Source excluindo o ultimo caracter '\\0': %d\n\n", tamanho);
 }
