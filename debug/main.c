@@ -1,6 +1,6 @@
-#include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 size_t	ft_strlen(const char *s)
 {
@@ -12,37 +12,35 @@ size_t	ft_strlen(const char *s)
 	return (l);
 }
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+char    *ft_strtrim(char const *s1, char const *set)
 {
-	size_t	index;
-	size_t	size_dst;
+    char    *temp;
+    int size;
+    int i;
 
-	if (dstsize <= ft_strlen(dst))
-		return (dstsize + ft_strlen(src));
-	size_dst = ft_strlen(dst);
-	index = 0;
-	while (src[index] && size_dst + 1 < dstsize)
-	{
-		dst[size_dst] = src[index];
-		index++;
-		size_dst++;
-	}
-	dst[size_dst] = '\0';
-	return (ft_strlen(dst) + ft_strlen(&src[index]));
+    i = 0;
+    size = ft_strlen(s1);
+    temp = malloc(ft_strlen(s1));
+    if (!temp)
+        return (NULL);
+    while (*s1)
+    {
+        while(s1 =! set[size] && size != 0)
+        {
+           size--;
+        }
+        temp[i++] = s1;
+        size = ft_strlen(s1);
+    }
+    temp[i] = '\0';
+    return(temp);
 }
 
 int main (void)
 {
-    char dst[] = "AB";
-    char src[] = "CDE";
+    char s1[] = "ABCCCDDDEEEE";
+    char set[] = "CDE";
     int tamanho;
     int numero;
-
-    numero = 6; //Considerar o caracter de final de string '/0'
-    printf("\nEsta função trabalha com String verdadeira, ou seja conta o caracter vazio no final da string\n\n");
-    printf("Destino: %s \nSource: %s\n", dst, src);
-    printf("Destino + Source + '\\0': %s%s\n", dst, src);
-    tamanho = ft_strlcat(dst, src, numero);
-    printf("Resultado do Destino depois da função incluindo o algoritimo vazio: %s\n", dst);
-    printf("Retorno:Tamanho do  Destino + Source excluindo o ultimo caracter '\\0': %d\n\n", tamanho);
+	printf("%s\n", ft_strtrim(s1, set));
 }
