@@ -12,31 +12,35 @@ size_t	ft_strlen(const char *s)
 	return (l);
 }
 
-char    *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-    char    *temp;
-    int size;
-    int i;
+	char	*temp;
+	int		size;
+	int		i;
 
-    i = 0;
-    size = ft_strlen(s1);
-    temp = malloc(ft_strlen(s1));
-    if (!temp)
-        return (NULL);
-    while (*s1)
-    {
-        while(s1 =! set[size] && size != 0)
-        {
-           size--;
-        }
-        temp[i++] = s1;
-        size = ft_strlen(s1);
-    }
-    temp[i] = '\0';
-    return(temp);
+	i = 0;
+	temp = malloc(ft_strlen(s1));
+	if (!temp)
+		return (NULL);
+	while (*s1)
+	{
+		size = ft_strlen(set);
+		while (*s1 != set[size] && size != 0)
+		{
+			size--;
+			if (*s1 == set[size])
+			{
+				s1++;
+				size = ft_strlen(set);
+			}
+			temp[i++] = *s1;
+			s1++;
+		}
+		return (temp);
+	}
 }
 
-int main (void)
+int main(void)
 {
     char s1[] = "ABCCCDDDEEEE";
     char set[] = "CDE";
