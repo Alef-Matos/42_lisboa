@@ -8,6 +8,8 @@ Na 42 aprende-se de forma prática, desenvolvendo projetos, entre pares, num mod
 
 #Projetos
 
+Área de estudos relacionada a futuros projetos.
+
 
 
 Área de trabalhos.
