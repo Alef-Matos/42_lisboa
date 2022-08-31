@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/30 15:15:32 by almatos           #+#    #+#             */
-/*   Updated: 2022/08/31 17:23:54 by almatos          ###   ########.fr       */
+/*   Updated: 2022/08/31 18:35:20 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t i;
+	size_t index;
 
 	if (!dst && !src)
 		return (0);
-	i = 0;
-	while (i < n)
+	index = 0;
+	while (index < n)
 	{
-		*(unsigned char*)(dst + i++) = *(unsigned char*)(src++);
+		*(unsigned char*)(dst + index++) = *(unsigned char*)(src++);
 	}
 	return (dst);
 }
