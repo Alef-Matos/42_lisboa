@@ -2,7 +2,7 @@
 # Ft_strchr    
     Foi usado aritmética de pointeiros como base para a recriação da função.
     
-### Código da função:
+## Código da função:
 ```c
 char	*ft_strchr(const char *s, int c)
 {
@@ -15,7 +15,7 @@ char	*ft_strchr(const char *s, int c)
 	return (0);
 }
 ```
-### Código da função com explicação linha a linha:
+## Código da função com explicação linha a linha:
 ```c
 char *ft_strchr(const char *s, int c) 
 ```
@@ -46,7 +46,7 @@ return (0);
 ```
 >Quando a condição  do `while` for falsa retorna null.
 ---
-### Demonstração:
+## Demonstração:
 
 <details>
 
