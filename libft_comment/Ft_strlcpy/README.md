@@ -111,7 +111,7 @@ return (size_src);
 
 </details>
 
-### Código da função (Outra maneira de se fazer uasando operações com ponteiros ):
+### Código da função (Outra maneira de se fazer usando operações com ponteiros ):
 ```c
 #include "libft.h"
 
