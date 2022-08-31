@@ -28,7 +28,7 @@ Todas as funções da minha "Libft" com Readm's, Explicando o que a função faz
 ### Funções da biblioteca `<strings.h>`
 - [ ] Função `ft_bzero` - Escreve zeros em uma string de bytes. 
 - [ ] Função `ft_memset` - Escreve um byte em uma string de bytes. 
-- [x] Função `ft_memcpy` - Copiar memoria do source para o destino. 
+- [x] Função [`ft_memcpy`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memcpy) - Copiar memoria do source para o destino. 
 - [ ] Função `ft_memccpy` - Copia a string até que o caractere seja encontrado. 
 - [ ] Função `ft_memmove` - Copiar cadeia de bytes. 
 - [ ] Função `ft_memchr` - Localizar byte na cadeia de bytes. 
