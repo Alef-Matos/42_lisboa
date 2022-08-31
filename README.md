@@ -1,8 +1,8 @@
 # 42_lisboa
 
-### READMS DAS FUNÇÕES E MAIS DETALHES [`CLIQUE AQUI`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment)
+### READM'S DO PROJETO ATUAL (LIFBT) [`CLIQUE AQUI`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment) PARA MAIS DETALHES.
 
-O que é?
+O que é a 42 lisboa?
 
 Fundada em Paris em 2013, a 42 tem hoje mais de 10.000 alunos em mais de 25 países, sendo reconhecida como uma das melhores escolas de programação do mundo.
 Aprender na 42 é totalmente gratuito, não exige qualquer background académico ou experiência em programação. O único requisito é que os candidatos tenham pelo menos 17 anos.
