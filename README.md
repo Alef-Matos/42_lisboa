@@ -1,4 +1,6 @@
-# 42_lisboa
+# PROGRESSO DOS MEUS ESTUDOS NA 42_LISBOA
+
+Separei esse espaço no meu git para organizar meus projetos que irei execuratar no decorrer do meu aprendizado na 42_Lisboa.
 
 ### READM'S DO PROJETO ATUAL (LIFBT) [`CLIQUE AQUI`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment) PARA MAIS DETALHES.
 
