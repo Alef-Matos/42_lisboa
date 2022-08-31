@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/08/18 12:29:33 by almatos          ###   ########.fr        #
+#    Updated: 2022/08/31 17:23:20 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ REPOSITORY = @ar -rc
 INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
-			ft_strnstr.c ft_strncmp.c
+			ft_strnstr.c ft_strncmp.c ft_memcpy.c
 OBJECTS	= $(SOURCES:.c=.o)
 
 BONUS_SOURCES = ft_strreverse_bonus.c ft_strstr_bonus.c ft_strcmp_bonus.c
