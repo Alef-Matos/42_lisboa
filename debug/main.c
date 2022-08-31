@@ -1,53 +1,35 @@
+#include <stdio.h>
 #include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 
-size_t	ft_strlen(const char *s)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t	l;
+	size_t i;
 
-	l = 0;
-	while (*s++)
-		l++;
-	return (l);
-}
-
-char	*ft_strtrim(char const *s1, char const *set)
-{
-	char	*temp;
-	int		size;
-	int		i;
-
+	if (!dst && !src)
+		return (0);
 	i = 0;
-	temp = malloc(ft_strlen(s1));
-	if (!temp)
-		return (NULL);
-	while (*s1)
+	while (i < n)
 	{
-		size = ft_strlen(set);
-		while (*s1 != set[size] && size != 0)
-		{
-			size--;
-			if (*s1 == set[size])
-			{
-				s1++;
-				size = ft_strlen(set);
-			}
-			temp[i++] = *s1;
-			s1++;
-		}
-		return (temp);
+//		((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+//		i++;
+        *(unsigned char*)(dst + i++) = *(unsigned char*)(src++);
 	}
+	return (dst);
 }
 
-int main(void)
+//COPIAR TESTES DAS FUNÇÕES ABAIXO
+int main (void)
 {
-    char s1[] = "ABCCCDDDEEEE";
-    char set[] = "CDE";
-    int tamanho;
-    int numero;
-	#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+    char dest[20];
+    char dest2[20];
+    const char source[] = "Alef Matos";
+ 
+// printf("ft_memcpy -> Resultado do Destino antes da função: %s\n", dest);
+//printf("memcpy -> Resultado do Destino antes da função: %s\n", dest2);
 
+    ft_memcpy(dest, source, strlen(source)+1);
+    memcpy(dest2, source, strlen(source)+1);
+  
+    printf("ft_memcpy -> Source: %s\nResultado do Destino depois da função4: %s\n\n", source, dest);
+    printf("memcpy -> Source: %s\nResultado do Destino depois da função: %s\n", source, dest2);
 }
