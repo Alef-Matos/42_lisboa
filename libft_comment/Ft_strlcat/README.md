@@ -2,7 +2,8 @@
 # Ft_strlcat  
 ```
 A função strlcat trabalha com string verdadeira ou seja é considerado o final da string '\0'. 
-Finalidade é a concatenação do conteúdo de uma variável a outra, ela recebe 3 parâmetros: destino, origem e o tamanho a ser concatenado.
+Finalidade é a concatenação do conteúdo de uma variável a outra, ela recebe 3 parâmetros: destino,
+origem e o tamanho a ser concatenado.
 ```
 
     
