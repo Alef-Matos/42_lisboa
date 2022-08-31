@@ -1,5 +1,7 @@
 # 42_lisboa
 
+### READMS DAS FUNÇÕES E MAIS DETALHES [`CLIQUE AQUI`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment)
+
 O que é?
 
 Fundada em Paris em 2013, a 42 tem hoje mais de 10.000 alunos em mais de 25 países, sendo reconhecida como uma das melhores escolas de programação do mundo.
