@@ -74,4 +74,8 @@ return (dst);
 
 ### Demonstração:
 
+<details>
+<summary>Demonstração</summary>
 ![image](https://github.com/Alef-Matos/42_lisboa/blob/master/libft_comment/Ft_strchr/)
+</details>
+
