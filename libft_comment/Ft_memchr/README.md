@@ -1,6 +1,7 @@
 # Ft_memchr  
 ```
-Finalidade é procurar a primeira ocorrência de uma caractere indicado num bloco de memória (string) e retornar um ponteiro do tipo void na posição encontrada.
+Finalidade é procurar a primeira ocorrência de uma caractere indicado num bloco de memória (string) e retornar um ponteiro do tipo void 
+na posição encontrada.
 ```
     
 ## Código da função:
