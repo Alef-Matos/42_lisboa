@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:04:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/09/01 18:48:56 by almatos          ###   ########.fr       */
+/*   Updated: 2022/09/01 19:03:37 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main (void)
     int     n;
     int     letra;
 
-    printf("\n################## BUSCA DE UM CARACTER NUM BLOCO DE MEMORIA ################\n\n");
+    printf("\n######### BUSCA DE UM CARACTER NUM BLOCO DE MEMORIA E RETORNA UM PONTEIRO NA POSIÇÃO ENCONTRADA #########\n\n");
     printf("String fonte: ");
     fgets(fonte,50,stdin);
     printf("Letra para busca: ");
