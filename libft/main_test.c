@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:04:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/09/01 19:03:37 by almatos          ###   ########.fr       */
+/*   Updated: 2022/09/01 19:04:54 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int main (void)
     else
         printf("\nletra %c, não encontrado!\n\n", letra);
     if(ponteiro_1 == ponteiro_2)
-        printf(":::::::: Funções iguais ::::::::\n");
+        printf(":::::::: MOULINETTE OK ::::::::\n");
     else
         printf(":::::::: Funções diferentes ::::::::::\n");
     return (0);

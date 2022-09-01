@@ -39,7 +39,7 @@ int main (void)
         printf("\nletra %c, não encontrado!\n\n", letra);
 
     if(ponteiro_1 == ponteiro_2)
-        printf(":::::::: Funções iguais ::::::::\n");
+        printf(":::::::: Moulinette Ok ::::::::\n");
     else
         printf(":::::::: Funções diferentes ::::::::::\n");
     return (0);
