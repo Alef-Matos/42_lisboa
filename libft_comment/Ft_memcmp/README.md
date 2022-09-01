@@ -40,17 +40,17 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 ```c
 size_t index; 
 ```
->Declarar variável do tipo 'size_t'(Valor sem sinal).
+>Declarar variável do tipo `size_t` (Valor sem sinal).
 ---
 ```c
 unsigned char			*string_1;
 ```
->Declarar um pointer do tipo unsigned char.
+>Declarar um pointer do tipo `unsigned char`.
 ---
 ```c
 unsigned char			*string_2;
 ```
->Declarar um pointer do tipo unsigned char.
+>Declarar um pointer do tipo `unsigned char`.
 ---
 ```c
 string_1 = (unsigned char *)s1;
