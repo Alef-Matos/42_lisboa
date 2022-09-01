@@ -1,23 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main_test.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/17 14:04:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/09/01 18:48:56 by almatos          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "libft.h"
-#include <stdio.h>
-#include <string.h>
-
-//COPIAR TESTES DAS FUNÇÕES ABAIXO
 //FUNÇÃO FT_MENCHR.C
-#include <stdio.h>
-#include <string.h>
 int main (void)
 {
     char    fonte[50];
@@ -27,7 +8,7 @@ int main (void)
     int     n;
     int     letra;
 
-    printf("\n################## BUSCA DE UM CARACTER NUM BLOCO DE MEMORIA ################\n\n");
+    printf("\n######### BUSCA DE UM CARACTER NUM BLOCO DE MEMORIA E RETORNA UM PONTEIRO NA POSIÇÃO ENCONTRADA #########\n\n");
     printf("String fonte: ");
     fgets(fonte,50,stdin);
     printf("Letra para busca: ");
@@ -56,6 +37,7 @@ int main (void)
         }
     else
         printf("\nletra %c, não encontrado!\n\n", letra);
+
     if(ponteiro_1 == ponteiro_2)
         printf(":::::::: Funções iguais ::::::::\n");
     else

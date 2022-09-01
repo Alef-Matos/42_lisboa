@@ -1,4 +1,4 @@
-//FUNÇÃO FT_MANCMP.C
+//FUNÇÃO FT_MENCMP.C
 int main (void)
 {
     char string_1[50];

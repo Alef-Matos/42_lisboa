@@ -31,7 +31,7 @@ Todas as funções da minha "Libft" com Readm's, Explicando o que a função faz
 - [x] Função [`ft_memcpy`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memcpy) - Copiar blocos de memória do source para o destino. 
 - [ ] Função `ft_memccpy` - Copia a string até que o caractere seja encontrado. 
 - [ ] Função `ft_memmove` - Copiar cadeia de bytes. 
-- [ ] Função `ft_memchr` - Localizar byte na cadeia de bytes. 
+- [x] Função [`ft_memchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memchr) - Localizar um caracter num bloco de memória.
 - [x] Função [`ft_memcmp`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memcmp) - Comparar blocos de memória entre s1 e s2. 
 
 ### Funções da biblioteca `<string.h>`
