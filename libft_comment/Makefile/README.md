@@ -65,6 +65,7 @@ help:
 			@echo "bonus: Inclui funções bonus a libft.a"
 			@echo "clean: Limpar objetos"
 			@echo "run: Compila a biblioteca inteira e executa o main_teste completo e limpa tudo "
+			@echo "norm: Verifica a norminette de todas as funções."
 			@echo "fclean: "
 			@echo "re: "
 

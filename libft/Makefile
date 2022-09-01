@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/09/01 13:04:22 by almatos          ###   ########.fr        #
+#    Updated: 2022/09/01 13:40:01 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,6 +73,7 @@ help:
 			@echo "bonus: Inclui funções bonus a libft.a"
 			@echo "clean: Limpar objetos"
 			@echo "run: Compila a biblioteca inteira e executa o main_teste completo e limpa tudo "
+			@echo "norm: Verifica a norminette de todas as funções."
 			@echo "fclean: "
 			@echo "re: "
 
