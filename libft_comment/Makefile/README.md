@@ -12,7 +12,7 @@ REPOSITORY = @ar -rc
 INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
-			ft_strnstr.c ft_strncmp.c
+			ft_strnstr.c ft_strncmp.c ft_memcpy.c
 OBJECTS	= $(SOURCES:.c=.o)
 
 BONUS_SOURCES = ft_strreverse_bonus.c ft_strstr_bonus.c ft_strcmp_bonus.c
