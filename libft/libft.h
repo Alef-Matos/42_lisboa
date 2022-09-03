@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/05 15:34:28 by almatos           #+#    #+#             */
-/*   Updated: 2022/09/01 18:38:01 by almatos          ###   ########.fr       */
+/*   Updated: 2022/09/04 00:20:34 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 char    *ft_strreverse(char *str);
 char    *ft_strstr(const char *str, const char *find);
 int     ft_strcmp(const char *s1, const char *s2);
+void	ft_putchar(char c);
+void    ft_putstr(char *str);
 
 #endif
