@@ -1,4 +1,4 @@
-//FUNÇÃO FT_MENCHR.C
+//FUNÇÃO FT_MEMCHR.C
 int main (void)
 {
     char    fonte[50];

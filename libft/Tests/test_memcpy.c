@@ -1,4 +1,4 @@
-//FUNÇÃO FT_MENCPY.C
+//FUNÇÃO FT_MEMCPY.C
 int main (void)
 {
     char dest[] = "alef";

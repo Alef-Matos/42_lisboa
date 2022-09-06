@@ -6,60 +6,52 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:04:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/09/04 00:28:04 by almatos          ###   ########.fr       */
+/*   Updated: 2022/09/06 14:30:09 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
+#include <string.h>
 
 //COPIAR TESTES DAS FUNÇÕES ABAIXO
-//FUNÇÃO FT_pritoposto.C
-void pritoposto(char *str)
+//FUNÇÃO FT_MENMOVE.C
+int main (void)
 {
-    int index;
-    int posi;
-    char    alfa[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    char    alfa_inverso[] = "ZYXWVUTSRQPONMLKJIHGFEDCBA";
-    
-    index = 0;
-    while(str[index])
-    {
-        posi = 0;
-        if (str[index] >='A' && str[index] <= 'Z')
-        {
-            while(posi <= 25 && str[index] != alfa[posi])
-                posi++;
-            ft_putchar(alfa_inverso[posi]);
-        }
-        else if(str[index] >='a' && str[index] <= 'z')
-        {
-            while(posi <= 25 && str[index] != alfa[posi] + 32)
-                posi++;
-            ft_putchar(alfa_inverso[posi]+32);
-        }
+    char    fonte[50];
+    char    destino[50];
+    char    destino2[50];
+    char    *fu_memcpy;
+    char    *fu_ft_memcpy;
+    int     n; 
+    printf("\n######### COPIA BLOCO DE MEMORIA DO SORCE PARA O DESTINO #########\n\n");
+// RECOLHA DE DADOS
+    printf("String Source: ");
+    fgets(fonte,50,stdin);
+    printf("String Destino: ");
+    fgets(destino,50,stdin);
+    printf("Número de bits: ");
+    scanf("%d", &n);
+//  ATRIBUIÇÃO DA FUNÇÃO
+    fu_memcpy = (char *)memcpy(destino2, destino, 50);
+    fu_ft_memcpy = (char *)memcpy(destino2, destino, 50);
+//  FUNÇÃO MEMMOVE
+    printf("\n==>Função memmove:\n");
+    printf("String fonte antes do memmove = %s", fonte);
+    printf("String destino antes do memmove = %s\n", destino);
+    (char *)memmove(destino, fonte, n);
+    printf("String destino depois do memmove = %s", destino);
+    printf("Numero de bits: %d\n", n);
+//  FUNÇÃO FT_MEMMOVE
+    printf("\n==>Função ft_memmove:\n");
+    printf("String fonte antes do memmove = %s", fonte);
+    printf("String destino antes do memmove = %s\n", destino2);
+    printf("String destino depois do memmove = %s", destino2);
+    printf("Numero de bits: %d\n", n);
+//  TESTE DE MOULINETTE
+        if(fu_memcpy == fu_ft_memcpy)
+            printf("::::::::: Moulinette Ok :::::::::\n");
         else
-            write(1, &str[index], 1); 
-        index++;
-    }
-}
-
-int main (int argc, char **argv)
-{
-    int index;
-    
-    index = 1;
-    if (argc >= 2)
-      {
-           while(argc > index)
-            {
-                pritoposto(argv[index]);
-                if (argc > index +1)
-                    write(1, " ", 1);
-                if (argc == index +1)
-                    write(1, "\n", 1);
-                index++;                
-            }         
-        }
-    else
-        write(1, "Falta argumentos\n", 18); 
+            printf(":::::::: Funções diferentes ::::::::::\n");
+    return (0);
 }
