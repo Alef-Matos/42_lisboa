@@ -6,7 +6,7 @@
 /*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:04:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/09/06 14:30:09 by almatos          ###   ########.fr       */
+/*   Updated: 2022/09/06 19:53:05 by almatos          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,17 @@
 #include <string.h>
 
 //COPIAR TESTES DAS FUNÇÕES ABAIXO
-//FUNÇÃO FT_MENMOVE.C
+//FUNÇÃO FT_MEMMOVE.C
 int main (void)
 {
     char    fonte[50];
     char    destino[50];
     char    destino2[50];
-    char    *fu_memcpy;
-    char    *fu_ft_memcpy;
     int     n; 
+    int     comp;
     printf("\n######### COPIA BLOCO DE MEMORIA DO SORCE PARA O DESTINO #########\n\n");
-// RECOLHA DE DADOS
+    printf("==>Dados de entrada:\n");
+//  RECOLHA DE DADOS
     printf("String Source: ");
     fgets(fonte,50,stdin);
     printf("String Destino: ");
@@ -33,24 +33,25 @@ int main (void)
     printf("Número de bits: ");
     scanf("%d", &n);
 //  ATRIBUIÇÃO DA FUNÇÃO
-    fu_memcpy = (char *)memcpy(destino2, destino, 50);
-    fu_ft_memcpy = (char *)memcpy(destino2, destino, 50);
+    memcpy(destino2, destino, 50);
 //  FUNÇÃO MEMMOVE
-    printf("\n==>Função memmove:\n");
-    printf("String fonte antes do memmove = %s", fonte);
-    printf("String destino antes do memmove = %s\n", destino);
-    (char *)memmove(destino, fonte, n);
+    printf("\n==>FUNÇÃO MEMMOVE:");
+    printf("\nString fonte antes do memmove = %s", fonte);
+    printf("\nString destino antes do memmove = %s\n", destino);
+    memmove(destino, fonte, n);
     printf("String destino depois do memmove = %s", destino);
-    printf("Numero de bits: %d\n", n);
+    printf("\nNumero de bits: %d\n", n);
 //  FUNÇÃO FT_MEMMOVE
-    printf("\n==>Função ft_memmove:\n");
-    printf("String fonte antes do memmove = %s", fonte);
-    printf("String destino antes do memmove = %s\n", destino2);
-    printf("String destino depois do memmove = %s", destino2);
-    printf("Numero de bits: %d\n", n);
+    printf("\n==>FUNÇÃO FT_MEMMOVE:");
+    printf("\nString fonte antes do memmove = %s", fonte);
+    printf("\nString destino antes do memmove = %s", destino2);
+    ft_memmove(destino2, fonte, n);
+    printf("\nString destino depois do memmove = %s", destino2);
+    printf("\nNumero de bits: %d\n", n);
 //  TESTE DE MOULINETTE
-        if(fu_memcpy == fu_ft_memcpy)
-            printf("::::::::: Moulinette Ok :::::::::\n");
+        comp = strcmp(destino, destino2);
+        if(comp == 0)
+            printf("\n::::::::: Resultado igual - Moulinette Ok :::::::::\n");
         else
             printf(":::::::: Funções diferentes ::::::::::\n");
     return (0);

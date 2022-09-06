@@ -12,10 +12,12 @@ REPOSITORY = @ar -rc
 INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
-			ft_strnstr.c ft_strncmp.c ft_memcpy.c ft_memcmp.c ft_memchr.c
+			ft_strnstr.c ft_strncmp.c ft_memcpy.c ft_memcmp.c ft_memchr.c \
+			ft_memmove.c
 OBJECTS	= $(SOURCES:.c=.o)
 
-BONUS_SOURCES = ft_strreverse_bonus.c ft_strstr_bonus.c ft_strcmp_bonus.c
+BONUS_SOURCES = ft_strreverse_bonus.c ft_strstr_bonus.c ft_strcmp_bonus.c \
+					ft_putchar_bonus.c ft_putstr_bonus.c
 BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
 MESSAGE = @echo "Congratulations ✔︎"
@@ -70,4 +72,5 @@ help:
 			@echo "re: "
 
 .PHONY: all clean fclean re
+
 ```
