@@ -29,7 +29,7 @@ Todas as funções da minha "Libft" com Readm's, Explicando o que a função faz
 - [ ] Função `ft_bzero` - Escreve zeros em uma string de bytes. 
 - [ ] Função `ft_memset` - Escreve um byte em uma string de bytes. 
 - [x] Função [`ft_memcpy`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memcpy) - Copiar blocos de memória do source para o destino. 
-- [x] Função [`ft_memccpy`] (https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memccpy) - Copia a string até que o caractere seja encontrado.
+- [x] Função [`ft_memccpy`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memccpy) - Copia a string até que o caractere seja encontrado.
 - [x] Função [`ft_memmove`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memmove) - Copiar cadeia de bytes. 
 - [x] Função [`ft_memchr`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memchr) - Localizar um caracter num bloco de memória.
 - [x] Função [`ft_memcmp`](https://github.com/Alef-Matos/42_lisboa/tree/master/libft_comment/Ft_memcmp) - Comparar blocos de memória entre s1 e s2. 
