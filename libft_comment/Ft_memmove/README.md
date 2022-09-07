@@ -8,7 +8,7 @@ para outro. Por outro lado, memmove() copia os dados primeiro para um buffer
 intermediário, depois do buffer para o destino. memcpy() leva a problemas 
 quando strings se sobrepõem.
 ```
-    
+```c   
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
@@ -45,6 +45,16 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 size_t index; 
 ```
 >Declarar variável do tipo 'size_t'(Valor sem sinal).
+---
+```c
+unsigned char	*pointer_dst;
+```
+>Declarar pointer `pointer_dst` do tipo `unsigned char`.
+---
+```c
+unsigned char	*pointer_src;
+```
+>Declarar pointer `pointer_src` do tipo `unsigned char`.
 ---
 ```c
 pointer_dst = (unsigned char*)dst;

@@ -1,20 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main_test.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: almatos <almatos@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/17 14:04:35 by almatos           #+#    #+#             */
-/*   Updated: 2022/09/07 14:46:31 by almatos          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-#include "libft.h"
-#include <stdio.h>
-#include <string.h>
-
-//COPIAR TESTES DAS FUNÇÕES ABAIXO
 //FUNÇÃO FT_MEMCCPY.C
 int main (void)
 {
