@@ -1,4 +1,4 @@
-# Ft_memccpy
+# Ft_memccpy_bonus
 ```
 A função memccpy() copia não mais que n bytes da área de memória src para a área de memória dest, 
 parando quando o caractere c é encontrado.
