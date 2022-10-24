@@ -6,7 +6,7 @@
 #    By: almatos <almatos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/11 18:42:26 by almatos           #+#    #+#              #
-#    Updated: 2022/09/07 14:33:25 by almatos          ###   ########.fr        #
+#    Updated: 2022/10/24 16:30:23 by almatos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,11 +21,11 @@ INDEX =	@ranlib
 
 SOURCES	= ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strrchr.c \
 			ft_strnstr.c ft_strncmp.c ft_memcpy.c ft_memcmp.c ft_memchr.c \
-			ft_memmove.c ft_memccpy.c
+			ft_memmove.c 
 OBJECTS	= $(SOURCES:.c=.o)
 
 BONUS_SOURCES = ft_strreverse_bonus.c ft_strstr_bonus.c ft_strcmp_bonus.c \
-					ft_putchar_bonus.c ft_putstr_bonus.c
+					ft_putchar_bonus.c ft_putstr_bonus.c ft_memccpy_bonus.c
 BOUS_OBJECTS = $(BONUS_SOURCES:.c=.o)
 
 MESSAGE = @echo "Congratulations ✔︎"
